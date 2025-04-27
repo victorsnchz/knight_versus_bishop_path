@@ -1,1 +1,18 @@
+This problem is a variation of the Minimum Knight Moves problem (see Leetcode 1197).
+Given an n x n chessboard, we want to figure 
+  1. If there exists a path for a knight to travel from a starting square to a target square.
+  2. If this path exists, what is the shortest amount of jumps required to travel from the starting square to the target square.
+There is also a bishop on the board. The knight cannot visit a square threatened by the bishop. If the knight captures the bishop along its path, it can the travel to squares which were previously threatened.
 
+Fill the following function 
+
+def min_jumps(n: int, 
+              start_row: int, start_col: int, 
+              end_row: int, end_col: int,
+              bishop_row: int, bishop_col: int):
+
+return the minimum jumps count if the target is reachable, otherwise return -1.
+
+Constraints:
+start coordinates, end coordinates and bishop coordinates are assumed always valid (0 <= x < n).
+n in range [3, 150]
